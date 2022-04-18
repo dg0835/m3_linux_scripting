@@ -1,0 +1,19 @@
+#!/bin/sh
+
+score=0
+answer=""
+
+cat quiz.txt | while read line; do
+  	echo $line | awk -F ";" '{print $1}'
+	echo "Enter your answer [y or n]"
+	read user_guess
+	answer=`echo $line | awk -F ";" '{print $2}'`
+	echo answer
+
+	if [[ $answer == $user_guess ]]; then
+		var=$((score+1))
+		echo "Correct! Your score is now ${score}"
+	else
+		echo "Wrong! Your score is still ${score}"
+	fi
+done
