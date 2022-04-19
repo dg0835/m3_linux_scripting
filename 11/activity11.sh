@@ -2,6 +2,7 @@
 
 num_array=()
 
+sortlist() {
 cat numbers.txt | while read line; do
 	for num in $line; do
 		echo $num
@@ -44,4 +45,7 @@ cat numbers.txt | while read line; do
 	done
 
 done
+}
 
+echo "Sorted list $(sortlist)"
+exit 0

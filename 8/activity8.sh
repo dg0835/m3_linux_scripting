@@ -40,3 +40,5 @@ echo "Sum: $current_sum"
 echo "Max: $current_max"
 echo "Min: $current_min"
 echo "Product: $current_product"
+
+exit 0

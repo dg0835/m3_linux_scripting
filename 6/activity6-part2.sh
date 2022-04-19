@@ -13,3 +13,5 @@ if [[ $difference -lt 0 ]]; then
 fi
 
 echo $difference
+
+exit 0

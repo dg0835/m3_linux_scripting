@@ -8,3 +8,5 @@ reversed_num=`echo $num | rev`
 echo reversed_num
 
 echo $num reversed is $reversed_num
+
+exit 0

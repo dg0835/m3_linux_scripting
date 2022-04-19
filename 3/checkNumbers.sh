@@ -51,3 +51,4 @@ done
 
 echo "$(compare_numbers) matches"
 
+exit 0

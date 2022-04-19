@@ -17,6 +17,5 @@ done
 
 echo $(($RANDOM%10)) >> $LOTTERYFILE
 
-
- 
+exit 0
 

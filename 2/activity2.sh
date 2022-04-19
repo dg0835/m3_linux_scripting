@@ -18,3 +18,5 @@ for file in $FILENAMES; do
 	mv $file $RENAMED_FILE
 
 done
+
+exit 0

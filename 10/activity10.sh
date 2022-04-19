@@ -5,6 +5,7 @@ read filename
 
 if test -f "$filename"; then
 	echo "Error - This file already exists."
+	exit 1
 else
 	touch $filename
 fi
@@ -19,5 +20,5 @@ for ((i = 0; i < $lines_number ; i++)); do
 	echo $random_number >> $filename 
 done
 
-
+exit 0
 

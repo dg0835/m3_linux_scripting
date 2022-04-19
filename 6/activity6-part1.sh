@@ -11,3 +11,5 @@ if [[ $a -gt $b ]]; then
 else
 	echo "False"
 fi
+
+exit 0
