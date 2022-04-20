@@ -15,6 +15,8 @@ cat test1.txt | while read num; do
 
 		echo "$num and $num2"
 
+		awk
+
 		if [[ "$num" == "$num2" ]]; then
 			echo "$num is not unique"
 			echo "$num" >> notunique1.txt
@@ -23,7 +25,12 @@ cat test1.txt | while read num; do
 
 	done
 
-	if [[ "$unique" == "True" ]]; then
-		echo "$num is unique" 
+done
+
+cat test1.txt | while read num; do
+	match=`echo grep $num notunique1.txt`
+	if [[ "$match" == "" ]]; then
+		echo "$num is unique"
 	fi
 done
+

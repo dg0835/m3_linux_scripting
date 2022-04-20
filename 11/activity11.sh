@@ -40,12 +40,13 @@ cat numbers.txt | while read line; do
 		done
 
 		echo "hello"
-		echo ${num_array[@]}
+		echo ${num_array[@]} > sorted.txt
 
 	done
 
 done
 }
 
-echo "Sorted list $(sortlist)"
+cat sorted.txt
+
 exit 0

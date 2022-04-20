@@ -2,5 +2,5 @@ An equilateral triangle always has 3 angles of 60 degrees;y
 Any number to the power of zero is 0;n
 Acute angles are above 90 degrees;n
 There are 1000 millilitres in a litre;y
-
+1 + 1 = 2; y
 
